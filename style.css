@@ -1,0 +1,87 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     scroll-behavior: smooth;
+     font-family: "Poppins" sans-serif;
+ }
+:root { 
+   --bg-color:#000000;
+}
+ body {
+     line-height: 1.6;
+ }
+
+ nav {
+     background: #333;
+     color: #fff;
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+     position: sticky;
+     top: 0;
+ }
+
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     margin: 0 10px;
+ }
+
+ section {
+     padding: 40px;
+ }
+
+ .home {
+     text-align: center;
+     background: #f4f4f4;
+ }
+
+ .home img {
+     width: 150px;
+     border-radius: 50%;
+ }
+
+ .skills,
+ .projects {
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .skills{
+    text-align: center;
+ }
+
+ .card {
+     border: 1px solid #ccc;
+     padding: 20px;
+     border-radius: 10px;
+     width: 200px;
+     background-color: #f4f4f4;
+ }
+
+ form input,
+ form textarea {
+     width: 100%;
+     padding: 10px;
+     margin: 10px 0;
+ }
+
+ button {
+     padding: 10px 20px;
+     background: #333;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+ }
+
+ @media(max-width:600px) {
+
+     .skills,
+     .projects {
+         flex-direction: column;
+         align-items: center;
+     }
+ }
